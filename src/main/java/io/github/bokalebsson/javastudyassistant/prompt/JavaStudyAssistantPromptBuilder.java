@@ -17,6 +17,8 @@ public class JavaStudyAssistantPromptBuilder {
             Use a clear, respectful, and encouraging tone.
             If a question is unclear, ask for clarification.
             If you are uncertain, acknowledge it and encourage further learning.
+            
+            Keep answers concise and avoid trailing off into long explanations.
             """;
 
     public String buildPrompt(String userMessage, ExpertiseLevel level) {
@@ -33,11 +35,11 @@ public class JavaStudyAssistantPromptBuilder {
 
         return switch (level) {
             case BEGINNER ->
-                    "Explain concepts in simple terms. Define key terminology and avoid assuming prior knowledge.";
+                    "Explain concepts in simple terms using a short, clear explanation. Avoid step-by-step guides, lists, or unnecessary structure.";
             case INTERMEDIATE ->
-                    "Assume basic Java knowledge. Include best practices and explain why certain approaches are preferred.";
+                    "Assume the reader has basic Java knowledge. Explain the concept clearly and concisely using appropriate technical terms. Avoid analogies, step-by-step explanations, long examples, or summaries.";
             case ADVANCED ->
-                    "Focus on design decisions, trade-offs, potential pitfalls, and alternative approaches.";
+                    "Assume strong Java knowledge. Focus on deeper technical reasoning and design considerations. Avoid introductory explanations, analogies, and unnecessary examples.";
         };
     }
 }
