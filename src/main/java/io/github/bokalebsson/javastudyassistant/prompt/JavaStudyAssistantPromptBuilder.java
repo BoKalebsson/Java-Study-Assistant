@@ -1,5 +1,8 @@
 package io.github.bokalebsson.javastudyassistant.prompt;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class JavaStudyAssistantPromptBuilder {
 
     private static final String SYSTEM_PROMPT = """
