@@ -10,7 +10,7 @@ export async function sendChatMessage(message, expertiseLevel) {
     },
     body: JSON.stringify({
       message: message,
-      expertiseLevel: expertiseLevel,
+      level: expertiseLevel,
     }),
   });
 
