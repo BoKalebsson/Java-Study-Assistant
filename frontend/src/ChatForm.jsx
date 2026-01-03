@@ -67,7 +67,7 @@ function ChatForm() {
       {answer && (
         <div className="card p-3">
           <h5>Answer</h5>
-          <p>{answer}</p>
+          <p style={{ whiteSpace: "pre-line" }}>{answer}</p>
         </div>
       )}
     </div>
