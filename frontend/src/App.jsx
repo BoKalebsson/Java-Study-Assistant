@@ -1,7 +1,9 @@
+import ChatForm from "./ChatForm";
+
 function App() {
   return (
     <div>
-      <h1>Java Study Assistant</h1>
+      <ChatForm />
     </div>
   );
 }
